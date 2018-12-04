@@ -9,5 +9,15 @@ There are three experiments, all in the `pathing_check/` directory. Each one has
 
 [README.txt of third one: Dependency JAR in absolute dir](pathing_check/exp3_dependent_jar_in_absolute_path/README.txt)
 
-For the third one, you will need to change the MANIFEST.MF to point to the absolute directory which has the JAR file:
-`out/artifacts/ModuleWithSomeClass_jar/ModuleWithSomeClass.jar`.
+Easy way to run these:
+
+```
+git clone https://github.com/arvindsv/pathing-check.git
+cd pathing-check
+
+docker run --rm=true -v `pwd`:/work openjdk:8-jdk /work/pathing_check/exp1_dependent_jar_in_same_dir/run.sh
+
+docker run --rm=true -v `pwd`:/work openjdk:8-jdk /work/pathing_check/exp2_dependent_jar_in_parent_dir/run.sh
+
+docker run --rm=true -v `pwd`:/work openjdk:8-jdk /work/pathing_check/exp3_dependent_jar_in_absolute_path/run.sh
+```
