@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Go-Version: 18.11.0-0
+ImplementationVersion: 18.11.0-0
+Go-Revision: 68ad518659756345f346b74f7aa1cfa9ffd8a501
+Implementation-Title: server
+Implementation-Version: 18.11.0-0
+Source-Compatibility: 1.8
+Target-Compatibility: 1.8
+Class-Path: file:/repos/2018_12_03_pathing_check/out/artifacts/ModuleW
+ ithSomeClass_jar/ModuleWithSomeClass.jar
