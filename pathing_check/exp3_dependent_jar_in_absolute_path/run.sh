@@ -8,4 +8,4 @@ unzip -p pathing.jar META-INF/MANIFEST.MF
 
 java -version
 
-java -cp pathing.jar:. Test
+java -Djdk.net.URLClassPath.disableClassPathURLCheck=true -cp pathing.jar:. Test
